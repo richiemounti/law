@@ -3,6 +3,10 @@ body {
     background: #f1f1f1;
 }
 
+.navbar{
+    background: #838c93;
+}
+
 .navbar .container{
     margin-left: 200px;
 }
@@ -43,11 +47,34 @@ body {
     text-align: center;
 }
 
-#ban-row{
+#banner-section .row{
+    width: 100%;
     overflow: hidden;
 }
 
 #footer-section footer{
     overflow: hidden;
-    background-color: rgb(80, 86, 102);
+    background-color: #3a4551;
+}
+
+.footer .col-md-4 h6{
+    font-size: larger;
+    color: #b18e47;
+}
+
+.footer .col-md-4 p{
+    color: #fbfbfb;
+}
+
+.footer .col-md-4 a{
+    color: #8e7844;
+}
+
+.footer .col-md-4 i{
+    color: #838c93;
+}
+
+.footer .col-md-4{
+    font-size: larger;
+    padding: 20px;
 }
