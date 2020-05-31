@@ -1,10 +1,18 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: #f1f1f1;
+    background: #f4f6f8;
 }
 
-.navbar{
-    background: #838c93;
+nav {
+    background: #fbfbfb;
+}
+
+.navbar a{
+    color: #b18e47;
+}
+
+.navbar a:hover {
+    color: #838c93; 
 }
 
 .navbar .container{
@@ -41,20 +49,69 @@ body {
     overflow: hidden;
 }
 
+
 .heading h2{
     text-transform: uppercase;
     padding: 10px;
     text-align: center;
 }
 
-#banner-section .row{
+/* contact section*/
+input[type=text], input[type=email], select, textarea{
     width: 100%;
-    overflow: hidden;
+    padding: 12px;
+    border: 1px solid #b18e47;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #3a4551;
+    color: #b18e47;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #fbfbfb;
+}
+
+/* Style the container/contact section */
+#contact-section .container {
+    border-radius: 5px;
+    background-color: #f4f6f8;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+#contact-section .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+#contact-section .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #contact-section .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
 }
 
 #footer-section footer{
     overflow: hidden;
     background-color: #3a4551;
+    height: 200px;
 }
 
 .footer .col-md-4 h6{
