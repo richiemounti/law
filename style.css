@@ -1,6 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background: #f4f6f8;
+    padding: 5px;
 }
 
 nav {
@@ -14,15 +15,14 @@ nav button span{
 .navbar a{
     color: #b18e47;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .navbar a:hover {
     color: #838c93; 
 }
 
-.navbar .container{
-    margin-left: 200px;
-}
+
 
 
 #carousel{
@@ -36,11 +36,13 @@ nav button span{
 #carousel .carousel-item img{
     width: 100%;
     height: 60vw;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 #home .container{
     padding: 30px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 #home h2{
@@ -70,7 +72,7 @@ nav button span{
 
 #client-section .container{
     padding: 30px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 /* contact section*/
@@ -200,11 +202,23 @@ input[type=submit]:hover{
     color: #fbfbfb;
 }
 
+.footer .col-md-8 p{
+    color: #fbfbfb;
+}
+
 .footer .col-md-4 a{
     color: #8e7844;
 }
 
+.footer .col-md-8 a{
+    color: #8e7844;
+}
+
 .footer .col-md-4 i{
+    color: #838c93;
+}
+
+.footer .col-md-8 i{
     color: #838c93;
 }
 
@@ -213,13 +227,27 @@ input[type=submit]:hover{
     padding: 20px;
 }
 
+.footer .col-md-8{
+    font-size: larger;
+    padding: 20px;
+}
 
-.card-img-top {
+
+#practice .card-img-top {
     width: 100%;
     height: 20vw;
     object-fit: cover;
 }
 
 .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 3rem 0; /* Space out the Bootstrap <hr> more */
   }
+
+#team-section .card-img-top {
+    height: 20vw;
+}
+
+#team-section img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
