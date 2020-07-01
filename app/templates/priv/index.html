@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <style>
+        #priv-law {
+          overflow: hidden;
+        }
+
+        #priv-law .container{
+          padding: 10px;
+        }
+
+        #priv-law .post{
+          font-size: 30px;
+          padding: 5px;
+        }
+
+        #priv-law ul{
+          font-weight: bold;
+          font-size: larger;
+          color: #b18e47;
+        }
+
+        #priv-law li {
+          display: inline;
+          text-align: center;
+        }
+
+        .jumbotron {
+          background-image: url("url_for('static', filename='assets/hands-699486_1920.jpg'");
+          background-size: cover;
+          height: 20vw;
+        }
+      </style>
+
+    <section id="priv-law">
+        <div class="container">
+            <div class="container">
+                <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+            <div class="post">
+                <p class="post-define">
+                    Our private client practice area provides legal direction to individuals and families. <br> 
+                    We provide all round legal services by incorporating other practice areas when handling personal legal issues. <br>
+                    Our Private Practice areas encompasses;
+
+                    <li>
+                        Estate Management. <br>
+                        Family Law-Divorce. <br>
+                        Child custody. <br>
+                        Maintance. <br>
+                        Matrimonial property and dispute resolution. <br>
+                        Wills and Probate.
+                    </li>
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock  %}

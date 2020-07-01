@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+            <section id="team-section">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-md-4">
+                        <div class="container">
+                            <div class="card">
+                                <img src="{{url_for('static', filename='assets/nnew2.jpg')}}" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">CONTACT</h5>
+                                    <p class="card-text">
+                                        <strong>Email:</strong>
+                                        <a href="#">guya@guyaadvocates.co.ke</a> <br>
+                                        <a href="#">info@guyaadvocates.co.ke</a> <br>
+
+                                        <strong>Phone:</strong>
+                                        +254718678043.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-md-8">
+                        <h3 class="pb-4 mb-4 font-italic border-bottom" style="color: #b18e47;">
+                            CAROLYNE GUYA
+                        </h3>
+                        <div class="team">
+                            <p>
+                                An ambitious visionary leader, Carolyne specializes in Technology, Corporate and commercial law, employment, real estate and dispute resolution. <br>
+                                Her experience covers diverse commercial matters, legal and compliance audits, company regulation matters, dispute resolution as well as the preparation of various commercial agreements. <br>
+                                She continues to gain expertise in Financial technology, payment systems, cyber security and data privacy governance. She has worked with technology, education institutions, start-ups, technology manufacturers and service providers as well as government institutions for over four years. <br>
+                                She holds a Bachelor of Laws (LLB) from the Catholic University of Eastern Africa and a post graduate Diploma in law obtained from the Kenya School of Law. She is a member of the Law Society of Kenya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <hr class="featurette-divider">
+
+        <section id="contact-section">
+            <div class="container">
+              <div style="text-align: center;">
+                <h2>Contact Us</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <img src="{{url_for('static', filename='assets/law3.jpg')}}" style="width: 100%;">
+                </div>
+                <div class="column">
+                  <form action="">
+                    <input type="text" name="name" id="fnme" placeholder="NAME">
+                    <input type="email" name="email" id="feml" placeholder="EMAIL">
+                    <label for="services">Which service do you require?</label>
+                    <select name="country" id="country">
+                      <option value="---">---</option>
+                      <option value="tele">Telecommunications, Media and Technology Law</option>
+                      <option value="commer">Commercial and Corporate Law</option>
+                      <option value="employ">Employment Law</option>
+                      <option value="dispute">Dispute Resolution</option>
+                      <option value="clients">Private Clients</option>
+                    </select>
+                    <textarea name="message" id="message" placeholder="MESSAGE" style="height: 170px;"></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+        </section>
+
+{% endblock  %}

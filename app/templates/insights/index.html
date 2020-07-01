@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<style>
+      #insights {
+        overflow: hidden;
+        }
+
+      #insights .container{
+        padding: 10px;
+        }
+      
+      #insight-items {
+        padding: 5px;
+      }
+
+      
+</style>
+<section id="insights">
+{% if blog_items %}
+  <div class="container">
+    <div class="heading">
+      <h2>{{ current_category | upper}}</h2>
+    </div>
+    <div id = "insight-items" class="row">
+      {% for blog_item in blog_items %}
+        {% include "/insights/_insight.html" %}
+      {% endfor %}
+    </div>
+  </div>
+{% else %}
+  <p>No insights found</p>
+{% endif %}
+</section>
+{% endblock  %}

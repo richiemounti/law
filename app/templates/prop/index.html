@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <style>
+        #prop-law {
+          overflow: hidden;
+        }
+
+        #prop-law .container{
+          padding: 10px;
+        }
+
+        #prop-law .post{
+          font-size: 30px;
+          padding: 5px;
+        }
+
+        #prop-law ul{
+          font-weight: bold;
+          font-size: larger;
+          color: #b18e47;
+        }
+
+        .jumbotron {
+          background-image: url("url_for('static', filename='assets/architecture-1522920.jpg')");
+          background-size: cover;
+          height: 20vw;
+        }
+    </style>
+
+    <section id="prop-law">
+        <div class="container">
+                <div class="container">
+                    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="post">
+                    <p class="post-define">
+                        Our Team Specializes in all areas of property law including commercial and residential conveyancing. Whether you’re purchasing, selling or leasing commercial property, as an owner, occupier, lender, borrower, investor or developer, our real estate team can provide expert advice and help. <br>
+                        We work closely with our clients to develop relationships based on trust so that we can fully understand their requirements. Whether we are representing your personal or your business interests, we get to know you thoroughly so that we can offer strategic advice on how to achieve your objectives.
+                    </p>
+                </div>
+        </div>
+    </section>
+{% endblock  %}

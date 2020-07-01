@@ -1,0 +1,39 @@
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    @include clearfix();
+}
+
+.carousel.pointer-event {
+    touch-action: pan-y;
+}
+  
+.carousel-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    @include clearfix()
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right {
+    transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+    transform: translateX(-100%);
+}
+

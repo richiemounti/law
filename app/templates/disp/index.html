@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <style>
+        #disp-law {
+        overflow: hidden;
+        }
+
+        #disp-law .container{
+        padding: 10px;
+        }
+
+        #disp-law .post{
+        font-size: 30px;
+        padding: 5px;
+        }
+
+        #disp-law ul{
+        font-weight: bold;
+        font-size: larger;
+        color: #b18e47;
+        }
+
+        #disp-law li {
+        display: inline;
+        text-align: center;
+        }
+
+        .jumbotron {
+        background-image: url("url_for('static', filename='assets/silhouette-3303823.png')");
+        background-size: cover;
+        height: 20vw;
+        }
+    </style>
+
+    <section id="disp-law">
+        <div class="container">
+                <div class="container">
+                    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="post">
+                    <p class="post-define">
+                        Our lawyers recognize that every dispute and every business is different and each will need its own tailored solution to suit your needs. Our advice is practical and commercial but focuses on our clients’ objectives. <br>
+                        We recognize that disputes are not all about the courtroom, particularly where our clients are keen to preserve a commercial relationship. We therefore encourage our clients, where appropriate, to explore other quick, practical and cost-effective avenues to resolve their disputes, including mediation or other forms of Alternative Dispute Resolution (ADR), and we shall guide you carefully through that process. <br>
+                        Out litigation team handles litigation arising from a wide range of matters including but not limited to;
+
+                        <li>
+                            Business Litigation
+                            Employment litigation
+                            Real estate/property Litigation
+                            Intellectual property Litigation.
+                        </li>
+                    </p>
+            </div>
+        </div>
+    </section>
+{% endblock  %}

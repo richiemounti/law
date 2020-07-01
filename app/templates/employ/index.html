@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <style>
+        #employ-law {
+          overflow: hidden;
+        }
+
+        #employ-law .container{
+          padding: 10px;
+        }
+
+        #employ-law .post{
+          font-size: 30px;
+          padding: 5px;
+        }
+
+        #employ-law ul{
+          font-weight: bold;
+          font-size: larger;
+          color: #b18e47;
+        }
+
+        .jumbotron {
+          background-image: url("url_for('static', filename='assets/office-2009693.jpg')");
+          background-size: cover;
+          height: 20vw;
+        }
+      </style>
+
+      <section id="employ-law">
+            <div class="container">
+                    <div class="container">
+                        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                            <img src="" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <p class="post-define">
+                            Employment law is an area of law which touches on every business whether small or large. <br>
+                            At Guya Advocates, we help you navigate the wide range of laws and regulations governing all businesses and assist you both before and when disputes arise, as they often do. <br>
+                            We provide legal services across sectors in relation to the following;
+                            <ul>Contracts of Employment/Service.</ul>
+                            We assist a number of employers in drafting and advising on Contracts of Employment. We will adapt these with you to suit your specific needs and they will serve as a template for future employees.
+                            We also advise on existing employment contracts and offer advice on when to include any amendments to bring them up to date with current legislation or developments in the particular sector in which you work.  Additionally, we advise employees on their contracts of employment, their rights under them, in particular post-termination obligations, including restrictive covenants.
+
+                            <ul>Employment Termination.</ul>
+                            We offer and provide legal advice to both employers and employees on employment termination.
+                            Employers may wish to, bring an employee’s employment to an end, hence they need to be careful to get detailed advice in advance so they do not fall foul of the employment legislation in dismissing or making redundant an employee.
+                            Guya Advocates advises employees if they wish to leave their employment, in particular if they have potential claims for dismissal and on their post-termination.
+                        </p>
+                </div>
+            </div>
+        </section>
+{% endblock  %}

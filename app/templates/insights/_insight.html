@@ -1,0 +1,23 @@
+<style>
+    .jumbotron {
+        background-image: url('');
+        background-size: cover;
+        height: 20vw;
+        }
+</style>
+
+<div class="container">
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark" >
+        <img src="{{blog_item.image_url}}" alt="" srcset="" style="height: auto; width: 100%; object-fit: cover; display: block;">
+    </div>
+</div>
+<div class="heading">
+    <h3 class="pb-4 mb-4 font-italic border-bottom">
+            {{blog_item.title}}
+    </h3>
+</div>
+<div class="insight">
+    <p class="insight-define">
+        {{blog_item.description}}
+    </p>
+</div>

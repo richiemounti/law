@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+
+{% block app_content %}
+  <style>
+        #comm-law {
+          overflow: hidden;
+        }
+
+        #comm-law .container{
+          padding: 10px;
+        }
+
+        #comm-law .post{
+          font-size: 30px;
+          padding: 5px;
+        }
+
+        #comm-law ul{
+          font-weight: bold;
+          font-size: larger;
+          color: #b18e47;
+        }
+
+        #comm-law li {
+          display: inline;
+          text-align: center;
+        }
+
+        .jumbotron {
+          background-image: url("url_for('static', filename='assets/abstract-1238932_1920.jpg')");
+          background-size: cover;
+          height: 20vw;
+        }
+  </style>
+  <section id="comm-law">
+    <div class="container">
+    <div class="container">
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <img src="" alt="" srcset="">
+        </div>
+    </div>
+    <div class="post">
+        <p class="post-define">
+            Guya Advocates commercial lawyers provide expert and specialist legal and commercial support for businesses from incorporation to winding up. 
+            Without sound corporate law advice, no organization can function at its best. Our passion is driving through business deals to a speedy and successful conclusion. We believe and remain focused on adding value and completing transactions. <br>
+            We deliver results in a full range of corporate and commercial legal areas, including:
+
+            <li>
+                Incorporation and company secretarial. <br>
+                Corporate governance <br>
+                Commercial contracting and due diligence. <br>
+                Legal and regulatory Compliance. <br>
+                General counsel services <br>
+                Shareholder agreements. <br>
+                Partnerships. <br>
+            </li>
+            <br>
+
+            Where appropriate, we liaise on behalf of our clients with legal and tax experts both locally and in other jurisdictions.
+            <br>
+
+            <strong>Commercial Dispute resolution-</strong>Our approach is strategic: we'll understand your commercial objectives, assess your strengths and weaknesses, and explore the pathways open to you - from mediation and alternative dispute resolution (ADR) to a day in court. At all times, we aim to minimize disruption to your business, maintain important relationships and protect your reputation.
+            We also work alongside your existing professional advisors including your accountant, financial advisor and private banker to ensure you receive coordinated and strategic advice. <br>
+            We aim to support our clients’ business and strategic needs across various sectors including Financial, Technology, Telecommunications, Real estate, Health and Immigration.
+            We remain at all times versatile in order to ensure that our clients’ needs are always our first priority.
+        </p>
+
+    </div>
+  </section>
+{% endblock  %}
+    

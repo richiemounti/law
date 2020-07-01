@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <style>
+        #tele-law {
+          overflow: hidden;
+        }
+        
+        #tele-law .container{
+          padding: 10px;
+        }
+
+        #tele-law .post{
+          font-size: 30px;
+          padding: 5px;
+        }
+
+        #tele-law ul{
+          font-weight: bold;
+          font-size: larger;
+          color: #b18e47;
+        }
+
+        .jumbotron {
+          background-image: url("url_for('static', filename='assets/markus-spiske-iar-afB0QQw-unsplash.jpg')");
+          background-size: cover;
+          height: 20vw;
+        }
+    </style>
+
+    <section id="tele-law">
+          <div class="container">
+              <div class="container">
+                  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                      <img src='' alt="" srcset="">
+                  </div>
+              </div>
+                  <div class="post">
+                    <p class="post-define">
+                        Informed by the unprecedented changes in the sectors of technology, media and telecommunications, Innovation is key, and so tech and telecoms suppliers, and creators and distributors of media, need to protect their investments and maximize their commercial opportunities. <br>
+                        Guya Advocates offers advice that is industry specific, and commercially strategic. Whilst we consistently provide advice that is of the highest quality, we take pride in our ability to make even the most complex of matters appear simple and practical. <br>
+                        More specifically we advise on;
+
+                        <ul>Data Protection Compliance (GDPR and National Laws)</ul>
+                        <p>
+                            We ask the questions that you didn't know you needed to. Making sure you stay compliant with global and domestic data privacy regulations; we help your business to have everything in place. From training and policies to privacy and data management protocols, we help you to prepare for issues before they appear. <br>
+                            Besides the potential regulatory penalties and reputational damage, there is also a risk of losing valuable information, time and revenue. Our data protection audits assess your business to identify any issues that need to be rectified from a compliance perspective. <br> We review your current processing activity and procedures and make recommendations based on the most up-to-date legislation.
+                            We also offer legal assistance with incident response planning, staff training and reviewing policies and processes. In the event of a breach, we also help you fulfil reporting obligations, conduct investigations and take remedial action.
+                        </p>
+
+                        <ul>Cyber Security and Crisis Management</ul>
+                        <p>
+                            In case of cyber-attacks, there is need to avoid financial, legal and reputational damage as much as possible. Our team of cyber security lawyers offer advice on reporting obligations, insurance considerations, potential liability and managing investigations.
+                        </p>
+
+                        <ul>Contract Negotiations and Data Sharing Agreements</ul>
+                        <p>
+                            When data needs to be shared between parties, it is essential that the appropriate agreements are in place to safeguard your business. At Guya Advocates, we offer legal support with contract negotiations with data controllers and processors, as well as third party service providers. We can also assist with negotiating and structuring Data Sharing Agreements.
+                        </p>
+
+                        <ul>Dispute Resolution/Litigation.</ul>
+                        <p>
+                            We cover all aspects of litigation concerning cyber security and data protection. From helping you settle on favorable terms or recovering damages and data, we can help develop a litigation strategy. <br> Our approach will carefully assess the facts, your business objectives and the defenses available to you.
+                            Additionally, our established relationships and experience with government agencies and industry regulators are a significant factor in our ability to provide exceptional advice to our clients regarding the environments in which they operate.
+                        </p>
+                    </p>
+                  </div>
+          </div>
+        </section>
+
+{% endblock  %}
