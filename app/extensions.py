@@ -13,5 +13,7 @@ db = SQLAlchemy()
 bcrypt = Bcrypt()
 csrf_protect = CSRFProtect()
 login = LoginManager()
+login.login_view = 'login.index'
+login.login_message = ('Please log in to access this page.')
 mail = Mail()
 migrate = Migrate()

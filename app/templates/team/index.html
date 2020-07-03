@@ -51,21 +51,7 @@
                   <img src="{{url_for('static', filename='assets/law3.jpg')}}" style="width: 100%;">
                 </div>
                 <div class="column">
-                  <form action="">
-                    <input type="text" name="name" id="fnme" placeholder="NAME">
-                    <input type="email" name="email" id="feml" placeholder="EMAIL">
-                    <label for="services">Which service do you require?</label>
-                    <select name="country" id="country">
-                      <option value="---">---</option>
-                      <option value="tele">Telecommunications, Media and Technology Law</option>
-                      <option value="commer">Commercial and Corporate Law</option>
-                      <option value="employ">Employment Law</option>
-                      <option value="dispute">Dispute Resolution</option>
-                      <option value="clients">Private Clients</option>
-                    </select>
-                    <textarea name="message" id="message" placeholder="MESSAGE" style="height: 170px;"></textarea>
-                    <input type="submit" value="Submit">
-                  </form>
+                  {% include "intro/_contact_form.html" %}
                 </div>
               </div>
             </div>

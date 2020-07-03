@@ -1,0 +1,13 @@
+{% from "intro/_formhelpers.html" import render_field %}
+<form action="/submit" method="post">
+{{form.hidden_tag()}}
+    {{ render_field(form.name) }}
+    {{ render_field(form.email) }}
+    
+    {{ render_field(form.category_id) }}
+    
+        
+    {{ render_field(form.description) }}
+    
+    {{ form.submit(class="btn-btn outline secondary") }}
+</form>

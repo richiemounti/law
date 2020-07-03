@@ -8,8 +8,8 @@ class Config(object):
     MAIL_PORT = 465
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
-    MAIL_USERNAME = 'babtdaddy67@gmail.com'
-    MAIL_PASSWORD = '8Mo9un20se17y'
+    MAIL_USERNAME = 'guyalawapp@gmail.com'
+    MAIL_PASSWORD = 'Qwerty!*'
 
     SECRET_KEY = 'S3cr3t'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or "postgresql://postgres:mulama@127.0.0.1:5432/lawdb"

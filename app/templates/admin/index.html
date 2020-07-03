@@ -68,7 +68,7 @@ $('#blog_items').DataTable( {
 </script>
 
 <script>
-$("#catalog_items").on("click", ".js-delete", function () {
+$("#blog_items").on("click", ".js-delete", function () {
     var button = $(this);
     {% if current_user.is_admin() %}
         bootbox.confirm({

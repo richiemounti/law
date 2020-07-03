@@ -89,11 +89,14 @@ class User(UserMixin, db.Model):
         self.password = bcrypt.generate_password_hash(password)
     
     def check_password(self, value):
-        self.password = bcrypt.check_password_hash(self.password, value)
+        return bcrypt.generate_password_hash(self.password, len(value))
     
-    def can(self, permissions):
-        return self.role.permissions >= permissions
+    def can(self, permisions):
+        return self.role.permissions >= permisions
     
+    def is_staff(self):
+        return self.can(Permissions.GENERAL)
+
     def is_admin(self):
         return self.can(Permissions.ADMINISTER)
     

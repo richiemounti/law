@@ -30,18 +30,19 @@ csrf_protect.init_app(app)
 login.init_app(app)
 mail.init_app(app)
 
-from .admin.admin import admin
-from .api import api
-from .blog.blog import blog
-from .main.main import intro
-from .commer.commer import commer
-from .disp.disp import disp
-from .employ.employ import employ
-from .priv.priv import priv
-from .prop.prop import prop
-from .team.team import team
-from .tele.tele import tele
-from .admin.login import login
+from app.admin.admin import admin
+from app.api import api
+from app.blog.blog import blog
+from app.main.main import intro
+from app.commer.commer import commer
+from app.disp.disp import disp
+from app.employ.employ import employ
+from app.priv.priv import priv
+from app.prop.prop import prop
+from app.team.team import team
+from app.tele.tele import tele
+
+from app.accounts.account import account
 
 
 app.register_blueprint(admin)
@@ -55,4 +56,4 @@ app.register_blueprint(priv)
 app.register_blueprint(prop)
 app.register_blueprint(team)
 app.register_blueprint(tele)
-app.register_blueprint(login)
+app.register_blueprint(account)

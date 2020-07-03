@@ -27,7 +27,7 @@ def index():
         remember_me = form.remember_me.data
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
-            return redirect(url_for('admin.login'))
+            return redirect(url_for('login.index'))
         login_user(user, remember=remember_me)
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':

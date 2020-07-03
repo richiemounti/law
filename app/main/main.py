@@ -6,7 +6,7 @@ from app.models import Category
 
 from flask_mail import Message
 from flask import (
-    Blueprint, request, render_template, make_response, abort, session
+    Blueprint, request, render_template, make_response, abort, session, flash
 )
 
 from app.messages.forms import MessageForm
@@ -32,12 +32,13 @@ def submit():
     categories = Category.query.all()
     form = MessageForm()
     form.category_id.choices = [(c.id, c.name) for c in categories]
-
+    
     if form.validate_on_submit():
 
         msg = Message(subject='Enquiry',
+                      sender= 'guyalawapp@gmail.com',
                       recipients=['babtdaddy67@gmail.com'],
-                      body=form 
+                      html=render_template('intro/_contact_form.html',form=form)
                         )
         
         mail.send(msg)

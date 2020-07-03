@@ -38,10 +38,10 @@
                     {% endfor %}
                 </div>
                 <div class="text-lg-left text-md-center text-sm-center text-xs=center">
-                    {% if current_user.is_admin() %}
-                        {{ form.submit(class="btn btn-primary") }}
-                    {% else %}
+                    {% if current_user.is_anonymous %}
                         {{ form.submit(class="btn btn-primary", disabled=True) }}
+                    {% else %}
+                        {{ form.submit(class="btn btn-primary") }}
                     {% endif %}
                     <a class="btn btn-secondary" href="{{ url_for('admin.index') }}"> Go Back</a>
                 </div>
